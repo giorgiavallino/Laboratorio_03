@@ -1,7 +1,10 @@
+# Definire una classe RichWord
 class RichWord:
+
+    # Definire il metodo __init__, i cui parametri sono costituiti da una parola
     def __init__(self, parola):
-        self._parola = parola # this is a string
-        self._corretta = None #this is a bool
+        self._parola = parola # è una stringa
+        self._corretta = None # è un valore booleano: vero o falso?
 
     @property
     def corretta(self):
