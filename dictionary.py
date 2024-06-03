@@ -40,7 +40,7 @@ class Dictionary:
         for i in range(0, len(self.dizionario)):
             print(self.dizionario[i])
 
-    # Definire il metodo getter attrvaerso @property: tramite questa dunzione, viene restituito il valore corrispondente
+    # Definire il metodo getter attraverso @property: tramite questa funzione, viene restituito il valore corrispondente
     # all'attributo, ossia viene restituito il valore del dizionario
     @property
     def dizionario(self):
