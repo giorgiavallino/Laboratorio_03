@@ -21,7 +21,7 @@ class Dictionary:
         # Aprire il file in modalità lettura indicando nel momento in cui si chiama il metodo loadDictionary() il nome
         # del file da leggere
         with open(path, "r") as file:
-            # Per ogni linea contenuta nel file...
+            # Per ogni linea contenuta nel file... (segnala errore qui!)
             for linea in file:
                 # Inizializzare la parola contenuta nella riga attraverso l'utilizzo del metodo strip() che elimina
                 # gli spazi bianchi
