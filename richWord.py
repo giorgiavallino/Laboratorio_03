@@ -4,7 +4,7 @@ class RichWord:
     # Definire il metodo __init__, i cui parametri sono costituiti da una parola
     def __init__(self, parola):
         self._parola = parola # è una stringa
-        self._corretta = None # è un valore booleano: vero o falso?
+        self._corretta = None # è un valore booleano: True o False?
 
     # Definire il metodo getter attraverso @property: tramite questa funzione, viene restituito il valore corrispondente
     # all'attributo, ossia viene restituito il valore di corretta (che è o vero o falso)

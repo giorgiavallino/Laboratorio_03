@@ -7,7 +7,7 @@ from multiDictionary import MultiDictionary
 # Definire una classe SpellChecker
 class SpellChecker:
 
-    # Definire un metodo __init__()
+    # Definire un metodo __init__
     def __init__(self):
         self._multi_dictionary = MultiDictionary()
 

@@ -1,7 +1,7 @@
 # Importare la classe SpellChecker dal modulo spellcheker
 from spellchecker import SpellChecker
 
-# Inizializzare uno spellchecker attraverso la relativa classe
+# Inizializzare uno spellchecker attraverso la sua relativa classe
 spell_checker = SpellChecker()
 
 while(True):

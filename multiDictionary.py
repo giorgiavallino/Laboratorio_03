@@ -5,7 +5,7 @@ from richWord import RichWord
 # Inizializzare la classe MultiDictionary
 class MultiDictionary:
 
-    # Definire il metodo __init__ nel quale vengono creati i dizionari relativi alla lingua italiana, inglese e
+    # Definire il metodo __init__, nel quale vengono creati i dizionari relativi alla lingua italiana, inglese e
     # spagnola: viene prima creato il dizionario per ogni lingua e viene poi implementata la funzione loadDictionary,
     # creata nella classe Dictionary, per caricare in una lista le parole del dizionario
     def __init__(self):
