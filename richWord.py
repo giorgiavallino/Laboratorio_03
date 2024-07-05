@@ -13,7 +13,7 @@ class RichWord:
         # print("getter of parola called" )
         return self._corretta
 
-    # Definire il metodo settere attrverso @name.property: tramite questa funzione, il setter prende il valore boolValue
+    # Definire il metodo setter attraverso @name.property: tramite questa funzione, il setter prende il valore boolValue
     # e lo salva nella proprietà corretta
     @corretta.setter
     def corretta(self, boolValue):

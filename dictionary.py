@@ -17,21 +17,21 @@ class Dictionary:
 
     # Definire il metodo loadDictionary, il quale aggiunge al dizionario, inizializzato precedemente come una lista
     # vuota, le singole parole contenute nel file.txt relativo alla lingua scelta
-    def loadDictionary(self,path):
+    def loadDictionary(self, path):
         # Aprire il file in modalità lettura indicando nel momento in cui si chiama il metodo loadDictionary() il nome
         # del file da leggere
         with open(path, "r") as file:
-            # Inzializzare il contenuto del file tramite il metodo .read()
-            contenuto = file.read()
-            # Inizializzare le parole contenute nel file tramite i metodi .strip().split()
-            parole = contenuto.strip().split()
-            # Per ogni parola contenuta in parole riscriverla usando una grafica minuscola e aggiungerla alla lista
-            # inizialmente vuota chiamata dizionario
-            for parola in parole:
+            # Per ogni linea contenuta nel file...
+            for linea in file:
+                # Inizializzare la parola contenuta nella riga attraverso l'utilizzo del metodo strip() che elimina
+                # gli spazi bianchi
+                parola = linea.strip()
+                # Richiedere che la parola presenti dei caratteri minuscoli
                 parola = parola.lower()
-                self.dizionario.append(parola)
+                # Appendere la parola alla lista dizionario
+                self._dizionario.append(parola)
         # Restituire il dizionario sotto forma di lista ormai non più vuota
-        return self.dizionario
+        return self._dizionario
 
     # Definire un metodo printAll che stampa ogni parola contenuta all'interno della lista chiamata dizionario
     def printAll(self):
